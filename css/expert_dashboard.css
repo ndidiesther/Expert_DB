@@ -1352,8 +1352,8 @@ body {
 }
 
 
-.health_input input {
-    width:50%;
+.health_input input,select {
+    width:55%;
     padding: 12px 15px;
     margin: 8px 0;
     display: inline-block;
@@ -1475,7 +1475,7 @@ body {
 .pic1{
     display: none;
 }
-.health_input input {
+.health_input input, select{
     width:65%;
 }
 
@@ -1516,7 +1516,7 @@ body {
 }
 }
 @media only screen and (max-width: 1049px) {
-    .health_input input {
+    .health_input input, select {
         width:75%;
     }
     .box {
@@ -1617,7 +1617,7 @@ body {
 
 }
 @media only screen and (max-width: 440px) {
-    .health_input input {
+    .health_input input, select {
         width:90%;
     }
     .health-div {
@@ -1631,7 +1631,7 @@ body {
 
 }
 @media only screen and (max-width: 370px) {
-    .health_input input {
+    .health_input input,  select {
         width:100%;
     }
 }
