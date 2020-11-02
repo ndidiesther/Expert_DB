@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expert Dashboard</title>
+    <link rel="stylesheet" href="css/expert_dashboard.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body onload="atOnload3()">
+    <div class="col-12">
+    <div class="col-12 nav">
+            <a> <img src="Images/QuicHealth logo.png"></a>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="AboutUs.html">About Us</a></li>
+              <li><a href="services.html">Our Services</a></li>
+              <li><a href="help_dashboard.html">Contact Us</a></li>
+              <li><a href="signIn.html">Sign In</a></li>
+            </ul>
+                
+        </div>
+        <div class="col-12 navbar-second">
+          <a href="#" onclick="showDrop()" class="dropdown"><span> &#9776;</span>
+              <div class="dropdown-content1">
+                <a href="index.html">Home</a>
+                <a href= "AboutUs.html"> About Us</a>
+                <a href="services.html">Our Services</a>
+                <a href="help_dashboard.html">Contact Us</a>
+                <a href="signIn.html">Sign In</a>
+              </div>
+            </a>
+        </div>
+    </div>
+    <div class="col-12 Dashboard-parent">
+        <div class="menu">
+            
+            <div class="submenu">
+            <i class="fas fa-arrow-left"></i> <br>
+            <ul>
+               
+                <li><img src="Images/Vector.png" alt="icon" class="list_icon" > <a href="expert_dashboard.html">Overview</a></li>
+                <li> <img src="Images/appointment.png" alt="icon" class="list_icon"> <a href="appointment_dashboard.html">Appointments</a></li>
+                <li> <img src="Images/notification.png" alt="icon" class="list_icon"> <a href="notification_dashboard.html">Notification</a></li>
+                <li> <img src="Images/meeting.png" alt="icon" class="list_icon"> <a href="photo_dashboard.html">Meeting</a></li>
+                <li> <img src="Images/health_profile.png" alt="icon" class="list_icon"> <a href="#">Health Profile</a></li>
+                <li> <img src="Images/setting.png" alt="icon" class="list_icon"> <a href="settings_dashboard.html">Settings</a></li>
+                <li> <img src="Images/help.png" alt="icon" class="list_icon"> <a href="help_dashboard.html">Help</a></li>
+                <li> <img src="Images/signout.png" alt="icon" class="list_icon"> <a href="signIn.html">Sign Out</a></li>
+    
+            </ul>
+            
+            </div>
+            <header class="header">
+    
+            <input class="menu-btn" type="checkbox" id="menu-btn" />
+            <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+                <ul class="menu">
+                    <li><img src="Images/Vector.png" alt="icon" class="list_icon1" > <a href="expert_dashboard.html">Overview</a></li>
+                    <li> <img src="Images/appointment.png" alt="icon" class="list_icon1"> <a href="appointment_dashboard.html">Appointments</a></li>
+                    <li> <img src="Images/notification.png" alt="icon" class="list_icon1"> <a href="notification_dashboard.html">Notification</a></li>
+                    <li> <img src="Images/meeting.png" alt="icon" class="list_icon1"> <a href="photo_dashboard.html">Meeting</a></li>
+                    <li> <img src="Images/health_profile.png" alt="icon" class="list_icon1"> <a href="#">Health Profile</a></li>
+                    <li> <img src="Images/setting.png" alt="icon" class="list_icon1"> <a href="settings_dashboard.html">Settings</a></li>
+                    <li> <img src="Images/help.png" alt="icon" class="list_icon1"> <a href="help_dashboard.html">Help</a></li>
+                    <li> <img src="Images/signout.png" alt="icon" class="list_icon1"> <a href="signIn.html">Sign Out</a></li>
+                </ul>
+            </header>
+            
+            
+        </div>
+        <div class="health_profile">
+            <div class="health_parent col-12">
+                <div class="health_personal col-12">
+                <img src="Images/person.png"> <p>Dr Alice Watson</p>
+                </div> 
+                
+               
+            <div class="health-div col-12">
+                <div class="col-12 sub_healthdiv">
+                    
+                    <div class="health_input">
+                        <div class="col-12">
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                <p>Core Specialites</p>
+                                <form action="#">
+                                    <input type="text" placeholder="e.g Naturopathy"> 
+                                </form>                               
+                            
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                <p>Set Available Date and Time</p>
+                                <form action="#">
+                                        <input type="text" placeholder="Tuesday October 20th 9am; 12pm; 3pm"> 
+                                </form>  
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <br> 
+                    <div class="expert_health col-12">
+                    <p >Profile</p>
+                    </div>
+                    
+                    <div class="col-12">
+                        <div>
+                        <textarea rows="12" cols="100" class="box">Type here...
+                        </textarea>
+                    </div>
+                    <form action="#">
+                        <input type="submit" value="Save Changes" class="healthprofile_submit">
+                    </form>
+                    
+                    
+
+                    
+                </div>
+            </div>
+                
+            </div>
+            
+            
+           
+        </div>
+        
+    </div>
+
+    <script src="js/quichealth.js"></script>
+
+
+</body>
+
+</html>
