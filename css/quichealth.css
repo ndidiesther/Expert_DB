@@ -6,8 +6,7 @@
 }
 body {
     font-family: 'Oxygen', sans-serif;
-    font-weight: bold;
-    background-color: #E5E5E5;  
+    font-weight: bold;  
 }
 .nav {
     background-color:white;
@@ -45,26 +44,47 @@ body {
     padding-left:30%;
     padding-top: 2%;
 }
-
-.content > div {
-    margin: auto;
-    padding-left:20px;
-    max-width: 600px;
+.grad1 {
+  height: 600px; 
+  background: linear-gradient(180deg, rgba(7, 6, 71, 0.05) 0%, rgba(196, 196, 196, 0) 84.9%);
+}
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 650px;
+  background: linear-gradient(180deg, rgba(7, 6, 71, 0.05) 0%, rgba(196, 196, 196, 0) 84.9%);
+}
+.content > div{
+  width: 600px;
+  height: 650px;
 
 }
+.content > div > div {
+  text-align: center;
+}
+.label_1 {
+  padding-right:380px;
+}
+.label_2 {
+  padding-right: 330px;
+}
+.label_3 {
+  padding-right: 370px;
+}
+.label_4 {
+  padding-right: 350px;
+}
 .paragraph {
-    margin-left:20%;
     padding:0px;
-    margin-top:5px;
+    margin-top:13px;
     font-size: 24px;
 }
 .paragraph1 {
-    margin-left:30%;
     padding:0px;
     margin-top:5px;
     font-size: 24px;
 }
-
 #first{
     width:33%;
     margin-right:30px;
@@ -88,6 +108,11 @@ body {
     width:30%;
     height:30%;
 }
+.sign_acc a, .create a {
+  color: #000;
+  text-decoration: none;
+}
+
 
 input[type=text], select {
     padding: 8px 14px;
@@ -140,24 +165,23 @@ input[type=text], select {
         width: 72%;
     }
     .signIn{
-        font-size: 20px;  
-        margin-left: 25%; 
+        font-size: 20px;   
     }
     .content > div > span {
         font-weight: normal;
         margin-left: 14%;  
     }
     .bottom {
-        margin:auto;
-        max-width:767px;
+        padding:10px;
         font-weight: normal;
         font-size:14px;
     }
     .recovery{
-        padding-right:60px;
+        padding-right:100px;
         font-size:14px;
         font-weight: normal;
-        float:left
+        float:left;
+        padding-left: 86px;
     }
     .create {
         font-size:14px;
@@ -240,32 +264,24 @@ input[type=text], select {
         font-size: 15px;
         text-decoration: none;
     }
-    .paragraph1 {
-        margin-left:25%;
-    }
+    
   }
   @media only screen and (max-width: 767px){
     .bottom {
-        
-        font-weight: normal;
-        font-size:14px;
-        padding: 5px;
+      font-weight: normal;
+      font-size:14px;
+      padding: 10px;
     }
 
   }
 
   @media only screen and (min-width: 299px) and (max-width: 500px){
-    .content > div {
-       margin:0px;
-        padding-left:20px;
-        max-width:400px;
-    }
+    
     input {
         padding:6px 8px !important;
     }
     .signIn{
-        font-size: 18px;  
-        margin-left: 15%; 
+        font-size: 18px;   
     }
     input[type=submit] {
         width:30%;
@@ -275,14 +291,84 @@ input[type=text], select {
         margin-left: 0%;  
     }
     .recovery{
-        margin-bottom:10px;
+        margin-bottom:15px;
     }
     .create {
         margin-bottom: 20px;
     }
-    .paragraph1 {
-        margin-left:23%;
+   
+  }
+  @media only screen and (max-width: 600px) {
+    .content > div{
+      width: 400px;
+      height: 650px;
+    
     }
+    .label_1 {
+      padding-right:245px;
+    }
+    .label_2 {
+      padding-right: 200px;
+    }
+    .label_3 {
+      padding-right: 240px;
+    }
+    .label_4 {
+      padding-right: 210px;
+    }
+    input[type=submit] {
+      width:40%;
+    }
+    .recovery{
+      font-size:14px;
+      font-weight: normal;
+      float:none;
+      padding-right: 170px;
+      padding-left: 0px;
+  }
+  .create {
+      font-size:14px;
+      font-weight:normal;
+      float:none;
+      padding-right: 40px;
+  }
+  }
+  @media only screen and (max-width: 400px)  {
+    .content > div{
+      width:100%;
+      height: 650px;
+    
+    }
+    .content {
+      display: block;
+    }
+    .content > div {
+      display: flex;
+    }
+    .label_1 {
+      padding-right:61%;
+    }
+    .label_2 {
+      padding-right: 48%;
+    }
+    .label_3 {
+      padding-right: 60%;
+    }
+    .label_4 {
+      padding-right: 54%;
+    }
+    input[type=submit] {
+      width:40%;
+    }
+    .User {
+      width: 74%;
+  }
+  .create {
+    padding-right: 0px;
+  }
+  .recovery {
+    padding-right: 0px;
+  }
   }
   @media only screen and (min-width: 501px) and (max-width: 550px) {
     input[type=submit] {
