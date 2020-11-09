@@ -9,8 +9,7 @@ body {
 }
 .nav {
     background-color:white;
-    padding: 1px 5%;
-    font-weight: bold; 
+    padding: 1px 5%; 
   }
   .nav > a:first-child {
     float: left;
@@ -934,7 +933,7 @@ body {
   .flex-container>div > div {
     color: white;
     width: 400px;
-    height: 290px;
+    height: 310px;
     padding:40px;
     background: #ffffff;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -1065,7 +1064,7 @@ body {
   @media only screen and (max-width: 450px) {
     .flex-container>div > div {
         width: 250px;
-        height:380px;
+        height:390px;
         padding:20px;
         text-align: center;
         
